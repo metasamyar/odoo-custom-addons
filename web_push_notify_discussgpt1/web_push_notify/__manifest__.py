@@ -1,16 +1,17 @@
 {
     'name': 'Web Push Notifications',
-    'version': '1.0',
+    'version': '2.0',
     'category': 'Tools',
     'summary': 'Web Push Notifications with VAPID and Firebase support',
     'description': """
         Integrates Web Push Notifications into Odoo using VAPID keys.
         Supports configuration via Settings.
     """,
-    'author': 'Your Name',
+    'author': 'Samyar Khatibi',
     'depends': ['base', 'web', 'mail'],
     'data': [
         'security/ir.model.access.csv',
+        'data/cron.xml',
         'views/push_subscription_views.xml',
         'views/settings_views.xml',
     ],
