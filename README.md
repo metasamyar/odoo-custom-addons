@@ -43,7 +43,7 @@ This module optimizes the standard Odoo Discuss (Mail) functionality to ensure r
 ### Settings Panel
 Easy configuration in the settings menu:
 
-![Settings Panel](static/description/screenshots/settings_view.png)
+![Settings View](Modules/web_push_notify/static/description/screenshots/settings_view.png)
 
 ## 📜 License
 
