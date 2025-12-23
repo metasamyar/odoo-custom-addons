@@ -1,50 +1,44 @@
-# Odoo Discuss Web Push Notifications
+# 🚀 Odoo Custom Addons
+> **A curated collection of high-performance custom modules for Odoo 18.0+**
 
-![Odoo Version](https://img.shields.io/badge/Odoo-18.0-purple) ![License](https://img.shields.io/badge/license-LGPL--3-blue)
+![Odoo Version](https://img.shields.io/badge/Odoo-18.0-purple?style=for-the-badge&logo=odoo)
+![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
+![License](https://img.shields.io/badge/License-LGPL--3-blue?style=for-the-badge)
 
-**Bring your Odoo 18 communication to life with real-time web push notifications.**
+## 📂 Module Index
 
-This module optimizes the standard Odoo Discuss (Mail) functionality to ensure reliable delivery of browser push notifications. It is designed to work seamlessly with the Odoo 18 web client and PWA features.
+| Module Name | Version | Description | Links |
+| :--- | :---: | :--- | :---: |
+| **Project WBS Menu** | `18.0` | 🌳 **Deep Hierarchical Tree View** for Odoo Projects. Visualize tasks, sub-tasks, and infinite nesting in a single consolidated interface with a custom high-performance renderer. | [**View Repo**](https://github.com/metasamyar/project_wbs_menu) |
+| **Discuss Web Push** | `18.0` | 🔔 **Native Web Push Notifications** for Odoo Discuss. Receive real-time browser notifications for messages and mentions even when the Odoo tab is closed. | [**View Repo**](https://github.com/metasamyar/Odoo-Discuss-Web-Push-Notifications) |
 
-## 🚀 Key Features
+---
 
-* **Odoo 18 Optimization:** Tuned to work with the latest Odoo Bus and Longpolling architecture.
-* **Native Browser Integration:** Uses standard Web Push API (Service Workers) to deliver notifications directly to Chrome, Firefox, Safari, and Edge.
-* **Background Alerts:** Receive notifications even when you are working in another tab or application.
-* **Instant Access:** Clicking the notification instantly opens the specific chat window or document in Odoo.
+## 🌟 Highlights
 
-## 🛠 Installation
+### 🌳 [Project WBS Menu](https://github.com/metasamyar/project_wbs_menu)
+* **Infinite Depth:** Recursively displays tasks $\rightarrow$ sub-tasks $\rightarrow$ sub-sub-tasks.
+* **Fast Loading:** Uses a single RPC call to fetch the entire project structure instantly.
+* **Custom UI:** A specialized OWL renderer that supports expand/collapse and project grouping.
 
-1.  **Clone the Repository:**
-    ```bash
-    cd /your/odoo/custom/addons
-    git clone [https://github.com/metasamyar/odoo-custom-addons.git](https://github.com/metasamyar/odoo-custom-addons.git)
-    ```
+### 🔔 [Odoo Discuss Web Push Notifications](https://github.com/metasamyar/Odoo-Discuss-Web-Push-Notifications)
+* **Real-time Alerts:** Bridges Odoo Discuss with modern browser Push APIs.
+* **Stay Connected:** Never miss a direct message or channel mention again.
+* **Seamless Integration:** Works directly with the standard Odoo Discuss application.
 
-2.  **Restart Odoo:**
-    ```bash
-    # If using Docker
-    docker restart odoo-container
-    ```
+---
 
-3.  **Install the Module:**
-    * Go to **Apps**.
-    * Click **Update Apps List**.
-    * Search for "Web Push Discuss".
-    * Click **Activate**.
+## 📥 Installation Guide
 
-## ⚙️ Configuration
+You can manage these addons individually or as part of this collection.
 
-### HTTPS Requirement
-**Important:** Web Push notifications **require HTTPS** (SSL) to function due to browser security policies.
-* Ensure your Odoo instance is served over `https://`.
-## 📸 Screenshots
+### Method 1: Clone the Hub (Submodules)
+If you want all modules at once and want to keep them updated:
 
-### Settings Panel
-Easy configuration in the settings menu:
+```bash
+# Clone this repository
+git clone [https://github.com/metasamyar/odoo-custom-addons.git](https://github.com/metasamyar/odoo-custom-addons.git)
+cd odoo-custom-addons
 
-![Settings View](Modules/web_push_notify/static/description/screenshots/settings_view.png)
-
-## 📜 License
-
-Distributed under the LGPL-3 License. See `LICENSE` for more information.
+# Initialize submodules to pull the code
+git submodule update --init --recursive
